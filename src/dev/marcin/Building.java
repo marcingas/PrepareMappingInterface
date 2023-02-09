@@ -24,7 +24,8 @@ public class Building implements Mappable{
 
     @Override
     public String toJSON() {
-        return Mappable.super.toJSON();
+        return Mappable.super.toJSON() + """
+               , "name": "%s", "usage": "%s" """.formatted(name, usage);
     }
 
     @Override
