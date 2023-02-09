@@ -23,6 +23,11 @@ public class Building implements Mappable{
     }
 
     @Override
+    public String toJSON() {
+        return Mappable.super.toJSON();
+    }
+
+    @Override
     public String getMarker() {
         return switch(usage){
             case ENTERTAINMENT -> Color.GREEN + " " + PointMaker.TRIANGLE;
@@ -30,6 +35,8 @@ public class Building implements Mappable{
             case RESIDENTIAL -> Color.BLUE + " " + PointMaker.SQUARE;
             case SPORTS -> Color.ORANGE + " " + PointMaker.PUSH_PIN;
             default -> Color.BLACK + " " + PointMaker.CIRCLE;
-        }
+        };
+
+
     }
 }
