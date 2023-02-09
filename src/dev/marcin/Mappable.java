@@ -1,5 +1,5 @@
 package dev.marcin;
-enum Geometry {LLINE, POLINT, POLYGON}
+enum Geometry {LLINE, POINT, POLYGON}
 enum Color{BLACK, BLUE, GREEN, ORANGE, RED}
 enum PointMaker {CIRCLE, PUSH_PIN, STAR, SQUARE, TRIANGLE}
 enum LineMarker {DASHED, DOTTED, SOLID}
