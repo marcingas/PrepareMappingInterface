@@ -1,4 +1,8 @@
 package dev.marcin;
+enum Geometry {LLINE, POLINT, POLYGON}
+enum Color{BLACK, BLUE, GREEN, ORANGE, RED}
+enum PointMaker {CIRCLE, PUSH_PIN, STAR, SQUARE, TRIANGLE}
+enum LineMarker {DASHED, DOTTED, SOLID}
 
 public interface Mappable {
     String JSON_PROPERTY = """
