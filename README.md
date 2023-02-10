@@ -1,11 +1,16 @@
 Create Mappable output: 
-Three categories:
--point
--line
--polygon 
--geometric shape
+Result: text that could be printed out to a file, for exchanging data with a mapping application.
 
-Result: text that could be printed out to a file, for exchanging data with a mapping application. 
+FInal Output should look like this example: 
+
+for BUILDING:
+
+"properties": "type": "POINT", "lable":"Town Hall(GOVERNMENT)", "marker": "RED STAR", "name": "Town Hall", "usage":"GOVERNMENT"}
+
+for UTILITYLINE: 
+
+"properties": "type": "LINE", "lable":"College St(FIBER_OPTIC)", "marker": "GREEN DOTTED", "name": "College St", "utility":"FIBER_OPTIC"}
+
 
 File: GEOJSON 
 
@@ -27,12 +32,6 @@ This method should print out the properties for each mappable type.
 
 TWO CLASSES that implements this interface: BUILDING, UTILITYLINE 
 
-FInal Output should look like this example: 
-
-for BUILDING:
-"properties": "type": "POINT", "lable":"Town Hall(GOVERNMENT)", "marker": "RED STAR", "name": "Town Hall", "usage":"GOVERNMENT"}
-for UTILITYLINE: 
-"properties": "type": "LINE", "lable":"College St(FIBER_OPTIC)", "marker": "GREEN DOTTED", "name": "College St", "utility":"FIBER_OPTIC"}
 
 PROJECT DESING:
 
