@@ -4,12 +4,16 @@ Three categories:
 -line
 -polygon 
 -geometric shape
+
 Result: text that could be printed out to a file, for exchanging data with a mapping application. 
 
 File: GEOJSON 
+
 Example of String for every feature that will be mapped: 
 "properties” : { "name” : "Town Hall", "usage": "GOVERNMENT"}
+
 PROJECT BASICS: 
+
 Interface MAPPABLE: 
 should have 3 methods:
 labe-> how item will be described on a map.
@@ -24,12 +28,14 @@ This method should print out the properties for each mappable type.
 TWO CLASSES that implements this interface: BUILDING, UTILITYLINE 
 
 FInal Output should look like this example: 
+
 for BUILDING:
 "properties": "type": "POINT", "lable":"Town Hall(GOVERNMENT)", "marker": "RED STAR", "name": "Town Hall", "usage":"GOVERNMENT"}
 for UTILITYLINE: 
 "properties": "type": "LINE", "lable":"College St(FIBER_OPTIC)", "marker": "GREEN DOTTED", "name": "College St", "utility":"FIBER_OPTIC"}
 
 PROJECT DESING:
+
 interface MAPPABLE(JSON_PROPERTY: STRING, static void mapIt(Mappable mappable), defoult toJSON(): String, getLabel(): String, getMarker(): String, getShape(): Geometry)
 ENUM: Geometry(LINE,POINT,POLYGON)
 ENUM: Color(BLACK,BLUE, ...)
@@ -37,6 +43,7 @@ ENUM: PointMarkers(CIRCLE,DIAMOND, ...)
 ENUM: LineMArkers(DASHED,DOTTED,SOLID)
 
 classes Building and UtilityLine implements Interface :
+
 name: String 
 type:
 Enum: Usage Type(Building) 
