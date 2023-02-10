@@ -45,5 +45,5 @@ classes Building and UtilityLine implements Interface :
 
 name: String 
 type:
-Enum: Usage Type(Building) 
-Enum: Utility Type(UtilityLine)
+Enum: Usage Type(Building) {ENTERTAINMENT, GOVERNMENT, RESIDENTIAL, SPORTS}
+Enum: Utility Type(UtilityLine) {ELECTRICAL, FIBER_OPTIC, GAS, WATER}
