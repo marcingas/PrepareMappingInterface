@@ -24,7 +24,7 @@ icon type(return) -> map marker
 interface should also include: 
 constant STRING JSON_PROPERTY -> "properties"" {%s}
 defoult method to JSON() that points out : type, label, marker
-static method: that takes a Mappable instance as an argument. 
+static method: that takes a Mappable instance as an argument . 
 This method should print out the properties for each mappable type.
 
 TWO CLASSES that implements this interface: BUILDING, UTILITYLINE 
@@ -37,8 +37,8 @@ PROJECT DESING:
 
 interface MAPPABLE(JSON_PROPERTY: STRING, static void mapIt(Mappable mappable), defoult toJSON(): String, getLabel(): String, getMarker(): String, getShape(): Geometry)
 ENUM: Geometry(LINE,POINT,POLYGON)
-ENUM: Color(BLACK,BLUE, ...)
-ENUM: PointMarkers(CIRCLE,DIAMOND, ...) 
+ENUM: Color(BLACK,BLUE,GREEN, BLUE, ORANGE)
+ENUM: PointMarkers(CIRCLE, PUSH_PIN, TRIANGLE, STAR, SQUARE ) 
 ENUM: LineMArkers(DASHED,DOTTED,SOLID)
 
 classes Building and UtilityLine implements Interface :
