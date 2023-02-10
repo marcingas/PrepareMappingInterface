@@ -27,10 +27,10 @@ defoult method to JSON() that points out : type, label, marker
 static method: that takes a Mappable instance as an argument. 
 This method should print out the properties for each mappable type.
 
-Example of String for every feature that will be mapped: 
-"properties” : { "name” : "Town Hall", "usage": "GOVERNMENT"}
-
 TWO CLASSES that implements this interface: BUILDING, UTILITYLINE 
+
+Example of String for every feature that will be mapped: 
+"properties” : { "name” : "Town Hall", "usage"/"utility": "GOVERNMENT"}
 
 
 PROJECT DESING:
