@@ -34,6 +34,6 @@ public class UtilityLine implements Mappable {
     @Override
     public String toJSON() {
         return Mappable.super.toJSON() + """
-               , "name": "%s", "usage": "%s" """.formatted(name, type);
+               , "name": "%s", "utility": "%s" """.formatted(name, type);
     }
 }
